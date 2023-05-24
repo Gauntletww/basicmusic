@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App {
+  width: 350px;
+  height: 600px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px 2px black;
+}
+.music_bar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0.3rem;
+}
+.music_img {
+  height: 350px;
+  width: 100%;
+}
+.music_img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-radius: 12px;
+  filter: blur(1px);
+ filter: contrast(1.75);
+}
+.music_main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.bar{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 0.5rem;
+}
+.music_progress {
+  flex-grow: 1;
+  margin: 0 8px;
+  height: 5px;
+  background-color: rgba(179, 179, 179, 0.5);
+  border-radius: 15px;
+  cursor: pointer;
+}
+.progress {
+  width: 0%;
+  background-color: black;
+  height: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+.music_control {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+.music_control .pause_play {
+  font-size: 3rem !important;
+}
+.music_control > div{
+cursor: pointer;
+
+}
+.music_control > div >i{
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 22px 50px 25px;
+  border-radius: 50%;
+ 
+
+}
